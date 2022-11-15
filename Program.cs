@@ -33,27 +33,16 @@ else
   System.Console.WriteLine("They are equal!");
 }
 
-
-switch(operation)
+// Switch expressions
+string result = operation switch 
 {
-  case "+":
-    System.Console.WriteLine($"{firstNumber} + {secondNumber} = {firstNumber + secondNumber}");
-    break;
-  case "-":
-    System.Console.WriteLine($"{firstNumber} - {secondNumber} = {firstNumber - secondNumber}");
-    break;
-  case "*":
-    System.Console.WriteLine($"{firstNumber} * {secondNumber} = {firstNumber * secondNumber}");
-    break;
-  case "/":
-    System.Console.WriteLine($"{firstNumber} / {secondNumber} = {firstNumber / secondNumber}");
-    break;
-  case "%":
-    System.Console.WriteLine($"{firstNumber} % {secondNumber} = {firstNumber % secondNumber}");
-    break;
-  default:
-    System.Console.WriteLine("Operation Not Found!");
-    break;
-}
+  "+" => $"{firstNumber} + {secondNumber} = {firstNumber + secondNumber}",
+  "-" => $"{firstNumber} - {secondNumber} = {firstNumber - secondNumber}",
+  "*" => $"{firstNumber} * {secondNumber} = {firstNumber * secondNumber}",
+  "/" => $"{firstNumber} / {secondNumber} = {firstNumber / secondNumber}",
+  "%" => $"{firstNumber} % {secondNumber} = {firstNumber % secondNumber}",
+  _   => "Operation Not Found!"
+};
+System.Console.WriteLine(result);
 
 
