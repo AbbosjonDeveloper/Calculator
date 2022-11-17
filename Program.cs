@@ -45,4 +45,15 @@ string result = operation switch
 };
 System.Console.WriteLine(result);
 
-
+if (firstNumber > 0) 
+{
+  int count = 1;
+  while (count < firstNumber )
+  {
+    count++;
+    if (count % 2 == 0)
+    {
+      System.Console.WriteLine(count);
+    }
+  }
+}
