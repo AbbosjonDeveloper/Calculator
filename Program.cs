@@ -19,7 +19,7 @@ string message2 =
   System.Console.WriteLine(message);
   System.Console.WriteLine(message2);
 
-
+// if else
 if (firstNumber > secondNumber)
 {
   System.Console.WriteLine("The first number is bigger!");
@@ -44,7 +44,7 @@ string result = operation switch
   _   => "Operation Not Found!"
 };
 System.Console.WriteLine(result);
-
+// While loop
 if (firstNumber > 0) 
 {
   int count = 1;
