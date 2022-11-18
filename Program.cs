@@ -54,6 +54,15 @@ if (firstNumber > 0)
     if (count % 2 == 0)
     {
       System.Console.WriteLine(count);
-    }
+    } 
   }
 }
+
+// Do While loop
+
+string password = "";
+do 
+{
+  System.Console.WriteLine("Enter password");
+  password = Console.ReadLine();
+}while(password != "pa$$w0rd");
