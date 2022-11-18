@@ -1,4 +1,14 @@
 ﻿using System;
+
+// Do While loop
+
+string password = "";
+do 
+{
+  System.Console.WriteLine("Enter password");
+  password = Console.ReadLine();
+}while(password != "pa$$w0rd");
+
 System.Console.WriteLine("Type 1st number: ");
 int firstNumber  = Convert.ToInt32(Console.ReadLine());
 System.Console.WriteLine("Enter oeration (+, -, *, /, % ) :");
@@ -58,11 +68,15 @@ if (firstNumber > 0)
   }
 }
 
-// Do While loop
 
-string password = "";
-do 
+
+// for loop
+
+for (int iterator = 1; iterator <= 10; iterator++ )
 {
-  System.Console.WriteLine("Enter password");
-  password = Console.ReadLine();
-}while(password != "pa$$w0rd");
+  for (int innerIterator = 1; innerIterator <=10; innerIterator++) 
+  {
+    System.Console.WriteLine($"{iterator} * {innerIterator} = {iterator * innerIterator}");
+  }
+  System.Console.Write("\n");
+}
